@@ -52,11 +52,6 @@ This project demonstrates an IoT kit based on the ESP8266 module, designed for r
 - Mobile App support for enhanced usability.
 - AI-based data analysis for predictive monitoring.
 
-## License
-This project is open-source under the MIT License. Feel free to contribute and improve!
-
-## Contact
-For queries and contributions, reach out via GitHub Issues.
 
 ---
 **GitHub Repository:** [ESP8266_Based_IoT_Kit](https://github.com/nikhiltembhurne321/Esp8266_Based_Iot_kit.git)
