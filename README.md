@@ -1,57 +1,64 @@
-# ESP8266 Based IoT Kit
+# ESP8266-Based IoT Kit
 
 ## Overview
-This project demonstrates an IoT kit based on the ESP8266 module, designed for real-time data monitoring and control. The system integrates various sensors and actuators to provide a comprehensive IoT solution.
+This repository contains an ESP8266-based IoT kit that integrates multiple sensors, actuators, and modules to demonstrate various IoT applications. The project is designed for educational and experimental purposes, allowing users to interact with different components and understand their working.
 
 ## Features
-- **Wireless Connectivity**: Uses ESP8266 for Wi-Fi communication.
-- **Sensor Integration**: Supports multiple sensors for data collection.
-- **Real-time Monitoring**: Displays sensor data on a web-based dashboard.
-- **Remote Control**: Allows remote operation of connected devices.
-- **User-friendly Interface**: Simple and interactive UI for ease of access.
+- **Real-time Monitoring and Control**: Sensors collect data and ESP8266 transmits it to a web interface.
+- **Multiple Input/Output Modules**: Includes switches, LEDs, motors, and displays.
+- **Wireless Communication**: Bluetooth and RFID for seamless interaction.
+- **Multiple Sensors**: Environmental and motion sensors for diverse applications.
 
 ## Components Used
-- **ESP8266 (NodeMCU)** - Main microcontroller for IoT connectivity.
-- **Sensors**:
-  - DHT11 (Temperature & Humidity)
-  - MQ-135 (Gas Sensor)
-  - LDR (Light Sensor)
-- **Actuators**:
-  - Relay Module (For controlling appliances)
-  - LED Indicator
-- **Other Components**:
-  - OLED Display (Optional for local monitoring)
-  - Power Supply (5V/3.3V as required)
+- **Display:** 7-Segment Display
+- **Sensors:**
+  - AccurateUltrasonic Sensor
+  - IR Sensor
+  - LDR (Light Dependent Resistor)
+  - MPU6050 (Accelerometer & Gyroscope)
+  - BMP180 (Barometric Pressure Sensor)
+  - DHT11 (Temperature & Humidity Sensor)
+- **Actuators & Modules:**
+  - Servo Motor
+  - DC Motor
+  - L293D Motor Driver
+  - Touch Module
+  - Rotary Encoder
+- **Communication Modules:**
+  - Bluetooth Module
+  - RFID Module
+- **User Inputs:**
+  - Switches
+  - Touch Inputs
 
 ## Installation & Setup
-1. **Hardware Setup**:
-   - Connect sensors and actuators to ESP8266 as per the circuit diagram.
-   - Ensure proper power supply.
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/nikhiltembhurne321/Esp8266_Based_Iot_kit.git
+   ```
+2. Install the required libraries in the Arduino IDE:
+   - ESP8266WiFi
+   - Adafruit_Sensor
+   - DHT
+   - MPU6050
+   - Adafruit_BMP180
+   - RFID
+3. Upload the code to the ESP8266 board.
+4. Connect the components as per the wiring diagram provided.
+5. Power up the board and monitor the output via Serial Monitor or a web interface.
 
-2. **Software Requirements**:
-   - Arduino IDE (or PlatformIO)
-   - ESP8266 Board Manager installed in Arduino IDE
-   - Libraries:
-     - `ESP8266WiFi.h`
-     - `DHT.h`
-     - `Adafruit_Sensor.h`
-     - `ThingSpeak.h` (for cloud integration, if applicable)
-
-3. **Code Upload**:
-   - Open the project in Arduino IDE.
-   - Configure Wi-Fi credentials in the code.
-   - Upload the code to the ESP8266 board.
-
-## How to Use
-1. Power on the ESP8266 module.
-2. Connect to the web dashboard via the IP address displayed in the Serial Monitor.
-3. Monitor real-time sensor data and control connected devices remotely.
+## Usage
+- Monitor sensor data in real time.
+- Control actuators remotely using Bluetooth or a web-based dashboard.
+- Implement IoT applications like home automation, security systems, and environmental monitoring.
 
 ## Future Enhancements
-- Integration with MQTT for better IoT communication.
-- Mobile App support for enhanced usability.
-- AI-based data analysis for predictive monitoring.
+- Integration with a cloud server for remote data logging.
+- Mobile app support for better user interaction.
+- Addition of more advanced sensors and actuators.
 
 
----
-**GitHub Repository:** [ESP8266_Based_IoT_Kit](https://github.com/nikhiltembhurne321/Esp8266_Based_Iot_kit.git)
+
+## Author
+[Nikhil Tembhurne](https://github.com/nikhiltembhurne321)
+
